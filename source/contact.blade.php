@@ -5,7 +5,7 @@
 @section('content')
     <h1>Contact</h1>
 
-    <form action="https://jumprock.co/mail/{{ $page->services->jumprock }}" method="post">
+    <form data-netlify='true' method="post">
         <div>
             <label for="name">Name</label><br>
             <input type="text" name="name" id="name" required>
@@ -19,6 +19,9 @@
         <div>
             <label for="message">Message</label><br>
             <textarea name="message" id="message" required></textarea>
+        </div>
+        <div>
+            <div data-netlify-recaptcha='true'></div>
         </div>
 
         <input name="subject" style="display: none;" value="Blog Contact Page">
