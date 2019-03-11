@@ -21,7 +21,7 @@
             <textarea name="message" id="message" required></textarea>
         </div>
         <div>
-            <div data-netlify-recaptcha='true'></div>
+            <div data-netlify-recaptcha='true'></div><br>
         </div>
 
         <input name="subject" style="display: none;" value="Blog Contact Page">
